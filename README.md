@@ -64,5 +64,5 @@
   <p>void everyBranchTest() {</p>
   <p>RuntimeException ex;</p>
   <p>ex = assertThrows(RuntimeException.class, () -> SILab2.function(null, null));</p>
-  
+  <p>assertTrue(ex.getMessage().contains("Mandatory information missing!"));</p>
   
