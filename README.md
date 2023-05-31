@@ -95,7 +95,7 @@
    <p>assertTrue(ex.getMessage().contains("Mandatory information missing!"));</p>
    <p>}</p>
 
-<h3>Објаснување на напишаните unit тестови</h3>
+<h3>Објаснување на unit тестови</h3>
 <p>Unit тестовите се напишани за да се исполнат сите услови и да можат да се поминат сите exceptions, во нашиов случај имаме еден exception. Со употреба на assertThrows се фаќаат exceptions кои се праќаат во „ex“, a за да може да се провери дали се фрлил соодветниот exception се користи assertTrue за дадениот влез. 
 
 Со multiple condition се проверува дадениот if услов. Исто така и овде се користи assertThrows и assertTrue за фаќање и проверување дали е точен даден exception.</p>
