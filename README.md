@@ -5,7 +5,8 @@
 <h3>Control Flow Graph</h3>
 
 
-![cfg drawio](https://github.com/Bojana-Draganovska/SI_2023_lab2_183199/assets/96067158/0a319a5f-8e4f-437f-bfe1-0adc2eff302d)
+
+![cfg drawio](https://github.com/Bojana-Draganovska/SI_2023_lab2_183199/assets/96067158/1ba3eac7-7421-4905-8101-0471327acb6f)
 
 <h3>Цикломатска комплексност</h3>
 
