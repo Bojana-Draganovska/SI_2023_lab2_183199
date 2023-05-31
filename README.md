@@ -60,9 +60,9 @@
   <li>36 - 37</li>
 </ul>
   
-  <span>@Test</span>
-  <span>void everyBranchTest() {</span>
-  <span>RuntimeException ex;</span>
-  <span>ex = assertThrows(RuntimeException.class, () -> SILab2.function(null, null));</span>
+  <p>@Test</p>
+  <p>void everyBranchTest() {</p>
+  <p>RuntimeException ex;</p>
+  <p>ex = assertThrows(RuntimeException.class, () -> SILab2.function(null, null));</p>
   
   
