@@ -63,7 +63,34 @@
   <p>@Test</p>
   <p>void everyBranchTest() {</p>
   <p>RuntimeException ex;</p>
-  <p>ex = assertThrows(RuntimeException.class, () -> SILab2.function(null, null));</p>
+  <p>ex = assertThrows(RuntimeException.class, () -> SILab2.function(null, null, null));</p>
   <p>assertTrue(ex.getMessage().contains("Mandatory information missing!"));</p>
+  <p>ex = assertThrows(RuntimeException.class, () -> SILab2.function("User", null, null));</p>
+   <p>assertTrue(ex.getMessage().contains("Mandatory information missing!"));</p>
+   <p>ex = assertThrows(RuntimeException.class, () -> SILab2.function(123, "123", null));</p>
+   <p>assertTrue(ex.getMessage().contains("Mandatory information missing!"));</p>
+   <p>ex = assertThrows(RuntimeException.class, () -> SILab2.function(123, 2, "user@example.com"));</p>
+   <p>assertTrue(ex.getMessage().contains("Mandatory information missing!"));</p>
+    <p>ex = assertThrows(RuntimeException.class, () -> SILab2.function(123, 2, "user"));</p>
+   <p>assertTrue(ex.getMessage().contains("Mandatory information missing!"));</p>
   <p>}</p>
   
+  <h3>Тест случаи според критериумот Multiple Condition</h3>
+  
+   <p>@Test</p>
+  <p>void multipleConditionTest() {</p>
+   <p>RuntimeException ex;</p>
+   <p>// if (user==null || user.getPassword()==null || user.getEmail()==null)</p>
+   <p>// TXX</p>
+   <p>// FTX</p>
+   <p>// FFT</p>
+   <p>// FFF</p>
+   <p>ex = assertThrows(RuntimeException.class, () -> SILab2.function("User", null, null));</p>
+   <p>assertTrue(ex.getMessage().contains("Mandatory information missing!"));</p>
+   <p>ex = assertThrows(RuntimeException.class, () -> SILab2.function(123, "123", null));</p>
+   <p>assertTrue(ex.getMessage().contains("Mandatory information missing!"));</p>
+   <p>ex = assertThrows(RuntimeException.class, () -> SILab2.function(123, 2, "user@example.com"));</p>
+   <p>assertTrue(ex.getMessage().contains("Mandatory information missing!"));</p>
+    <p>ex = assertThrows(RuntimeException.class, () -> SILab2.function(123, 2, "user"));</p>
+   <p>assertTrue(ex.getMessage().contains("Mandatory information missing!"));</p>
+   <p>}</p>
